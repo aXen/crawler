@@ -102,7 +102,7 @@ crawler.prototype.get = function (url, callback) {
 				body += chunk;
 			}).on('end', function () {
 				if (response.statusCode == 200) {
-					console.log(response.headers);
+					//console.log(response.headers);
 					console.info("get(" + url + ") successfully!");
 					//console.debug("body: \r\n" + body);
 					if (callback) {
